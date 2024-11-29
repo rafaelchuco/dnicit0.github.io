@@ -1,0 +1,96 @@
+:root {
+  --ancho: 50%;
+  --padding: 20px;
+  --color: rgb(0, 140, 187);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: var(--ancho);
+  background: var(--color);
+  padding: var(--padding);
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+#dni {
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(247, 247, 247);
+  background: none;
+  font-size: 38px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.button button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: rgba(0, 0, 0, 0.425);
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+#dni::placeholder {
+  color: white;
+  opacity: 0.3;
+}
+
+/* RESULTADO */
+
+.resultado {
+  width: var(--ancho);
+  padding: var(--padding);
+  background: var(--color);
+}
+.resultado h2 {
+  color: rgb(0, 26, 41);
+  font-size: 20px;
+}
+.resultado .dni,
+.nombre,
+.apellido,
+.cui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 3px solid white;
+}
+.label {
+  width: 8%;
+  margin-top: 30px;
+}
+.res input {
+  width: 92%;
+  background: none;
+  border: none;
+  outline: none;
+
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
